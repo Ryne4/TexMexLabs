@@ -4,6 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tex Mex Labs</title>
+  <script>
+    // Generate pepper emoji favicon
+    (function() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 64; canvas.height = 64;
+      const ctx = canvas.getContext('2d');
+      ctx.font = '52px serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('🌶️', 32, 36);
+      const link = document.createElement('link');
+      link.rel = 'icon';
+      link.href = canvas.toDataURL('image/png');
+      document.head.appendChild(link);
+    })();
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,7 +59,7 @@
   </div>
   <h1 class="tagline">Creating Fun Apps<br>For Everyone</h1>
   <p class="sub">Games &bull; Apps &bull; Good Times</p>
-  <div class="divider"><span></span><span class="pepper">🌶️</span><span></span></div>
+  <div class="divider"><span></span><span></span></div>
   <div class="badges">
     <div class="badge">
       <div class="badge-icon">
